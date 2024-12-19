@@ -1,0 +1,215 @@
+EAGE ANNUAL
+
+VIENNA | AUSTRIA
+
+Double funnel approach for screening of potential CO2 storage opportunities in the Norwegian
+Continental Shelf
+
+Introduction
+
+Carbon capture and storage (CCS) is a key waste management strategy for reducing carbon dioxide (CO2)
+emissions and mitigating climate change. The Norwegian continental shelf has significant capacity forCCS,
+as it has several depleted oil and gas fields that can be used for storage of CO2. The field of CCS has seen
+significant growth in recent years, as the need to reduce carbon CO2 emissions becomes increasingly
+urgent. However, despite the increasing number of studies on CCS, there remains a lack of consensus on
+the most effective methods for accelerating and scaling up CCS projects.
+
+n this study, the integration of Machine Leaming (ML) whereby the reports from the Norwegian Petroleum
+Directorate (NPD) are ingested into one platform creates potential cost-effective solution by screening
+revious knowledge gathered for depleting oil and gas fields and significantly reduces the time of the
+screening, the evaluation and the ranking of CCS prospects. We investigate the feasibility of such a study
+on the Norwegian Continental Shelf by analyzing the geology and capacity of existing oil and gas fields.
+The analysis is conducted on historical data from final well reports for 361 wells (NPD, 2023) which are
+riorly ingested using Machine Learing (ML) and Artificial Intelligence (AI) by indexing and tagging
+metadata from the documents, extracting, and classifying images and generating geological interpretable
+output such as heat maps or knowledge graphs. Our research includes a detailed characterization and
+interpretation of the subsurface geology, including the identification of potential storage formations, the
+analysis of reservoir properties such as porosity and permeability and the evaluation of seal characteristics.
+We also conducted a comprehensive assessment of the capacity for CO2 storage, considering factors such
+as injection rate and pressure buildup.
+
+Methodology
+
+Depleting oil and gas fields in the Norwegian Continental Shelf with their massive amount of data being
+collected over decades of development and production are often considered good candidates for CCS
+opportunities. Unfortunately the vast amount of knowledge come with the challenges associated to the lack
+of normalization of the data and the diversity of the different format and template utilized making it difficult
+to utilize the full potential of such data without allocating significant manual work.
+
+n our case study, Machine learning pipelines are used to classify, cluster, and extract insights from such
+an unstructured data. Priorly trained and G&G domain specific natural language processing (NLP)
+transformers are executed on the text to perform indexing, metadata tagging and topic modeling, when
+Deep Convolutional Neural Network (DCNN) extract, classify and segment extracted images. Such an
+approach has the advantage of significantly lessening manual human intervention allowing G&G experts
+to focus on the interpretation of the data itself using a front end deployed interface (Baillard et al., 2019).
+As seen in Figure 1 the data visualization and interpretation are performed through a suite of six analytical
+tools: (1) summarizes the important attributes of the well automatically extracted from the document, (2)
+aids in portraying the well data on a map and visualizes the lateral distribution of search queries, (3)
+rovides an in-depth search within all the corpus for the text and any tagged associated metadata using
+NLP, (4) correlates wells between each other’s to understand and interpret the semantic structure of the
+basin(5) searches the images extracted from DCNN into its respected geological categories, (6) quantifies
+the frequency of different lithologies present from the different wells.
+
+84" EAGE Annual Conference & Exhibition
+
+EAGE ANNUAL
+
+VIENNA | AUSTRIA
+
+@ Well Summary Tab (2) Heat Map 3 module 2 a findings with
+
+Figure 1 Analytical tools used for the case study research strategy for CO2 storage screening
+
+Such a set of tools provides powerful means for understanding and interpreting large and complex sets of
+data. It can help to identify patterns, trends, and relationships that might not be immediately apparent from
+raw data due to the segregation of information in separate files for each well. By narrowing down the scope
+of focus on selected wells, the exclusion of non-relevant well and time frame reduction of the process can
+be accomplished.
+
+In this paper, we propose a new CCS screening workflow called Double Funnel Approach (DFA), seen on
+Figure 2 which consists of a “data sweep” and a “‘data target”. The “data sweep” aims to reduce all findings
+from all ingested data to key learnings and key wells over the area of interest, allowing to review and rank
+the most suitable field candidates for potential CCS opportunities. The “data target” follows the “data
+sweep” and focuses only on the field selected candidates and aims to refine and enhance the existing
+unstructured data with seismic, logs, interpretation and geomodel data. During this exercise, redundant and
+irrelevant data are removed through efficient automated version indexing and cross-correlation with the
+unstructured data. Finally, the data is now ready for screening for CO2 injection capacity and monitoring
+analysis.
+
+Unstructured Data Interpretation
+Key learnings Bett
+Key wells ef
+“ ” Key risks
+Data Sweep’ Key drivers Target field for CO2
+Basin Mapping area storage
+Play Evaluation | oe
+Reservoir Properties |
+Monitor injection in
+Seal Properties Depleting fields review CCS wells
+and ranking
+091g ee,
+BASIN FIELD
+Identify learning over Propagate learning
+sedimentary basins over key depleting
+
+fields
+
+Figure 2 Proposed Double Funnel Approach for CCS Screening Studies
+
+CCS “data sweep” use case offshore Norway
+
+The ingestion of data for the case study comprises of 490,000 pages and 440,000 images, covering a total
+of 361 wells within 5 basins in Norway consolidating 50 years of exploration, development, and production.
+All these data has been retrieved from the Norwegian Petroleum Directorate (NPD). The “data sweep” of
+the data was completed in 21 days which evaluated various hypothesis and converge on the key learnings,
+key wells, key risks, and key drivers.
+
+84" EAGE Annual Conference & Exhibition
+
+EAGE ANNUAL
+
+VIENNA | AUSTRIA
+
+Figure 3 shows the generated knowledge graph associated to the zone of interest. Knowledge graph is a
+structured way to represent and organize knowledge in a way that is easily queried and traversed across all
+the corpus of documents ingested. This makes it useful for a holistic interpretation of the wells present in
+the area of interest, interpreting and ranking them based on their location and importance in the graph
+respectively as “alpha” or geological analogue, “scouts”, “pack or “lone-spirit” wells. As observed, the
+structure of the knowledge graph does indicate a non-homogeneous distribution with 7 different clusters
+being identified. Each cluster is centered around key wells acting as key geological analogues (“alpha”
+well) for the surrounded wells located within the cluster. “Scouts” wells define the unique critical paths
+between adjacent clusters, allowing geologists to deeper understand the geology and exploration history of
+the area of interest (Hernandez et al., 2019).
+
+td so sf age 13 ae te S82
+ee 1 ; % ian 14 2 ot
+7 7 ASE ee # = 5 20% 8 ‘i z \
+“C50 me e50gye-3 ease, le 3 se: 3 2QN7
+7 2st \ Oe, M5, [| OS ! i
+\ SMA oe: ae - Ps 205g
+6506/1 2-6 \ 2 xieee eal “%, 8 ™ ole , Sips a
+6507/7-2 cemes rcs "ts al 2@1 "OM
+
+Figure 3 Knowledge graph with clusters of wells from the Norwegian dataset
+
+Based on the recognized clusters, wells are further investigated by cross-correlating their respective post
+drill conclusion, formation penetration and keywords search associated to reservoir properties, seal
+characteristics or a specific search allowing a deeper dive in the corpus. An example of such full corpus
+search for ‘porosity’ detected from the well final well reports, within text, images and tables identifying the
+relevant values of the porosity and their associated formations. Auto-classified images can enhance the
+analysis by providing detailed information about the textures, layers, and structural characteristics of the
+rocks through different scales, from field scale with seismic stacks or isochrone map, to microscopic scale
+with thin section images. Additionally, image analysis techniques such as pattem recognition can be used
+to automatically extract features and classify rock formations.
+
+In this example, the “data sweep” suggests suitable areas for CCS in the Norwegian Sea corresponding to
+Heidrun and Marulk fields. The study highlights the potential of Ile and Gam formation within the Fangst
+Group under the Heidrun Field. These intervals show good average depths for CO2 storage for supercritical
+storage, and are characterized by good porosity and permeability, with a significant net sand thickness. Seal
+integrity has been confirmed and validated. The interval above Ile and Gam are currently producing, and
+therefore has seismic and velocity data which allows precise CO2 injection monitoring through
+microseismic. The upper Ile and Garn aquifers have good reservoirs in the southern part of the Froan Basin
+which may indicate additional potential CCS storage in this area.
+
+84" EAGE Annual Conference & Exhibition
+
+EAGE ANNUAL
+
+VIENNA | AUSTRIA
+
+. + Average Average .,
+Well Depth Field Formations Porosity Beoneability, Seal Lithology
+
+2144.5 - Heidrun 9
+
+6507/7-6 2189.5 Field Ile Fm Good (25%) | Very Good Claystone Sandstone
+
+6507/2-2 3670 - 3695 ea Garn Fm Moderate - Claystone Sandstone
+2507 - Heidrun : Shaly
+
+6507/7-10 25315 Field Garn Fm Fair to Good | - Claystone Sandstone
+2411.2 - Heidrun 6 Good (160
+
+6507/7-5 2473.5 Field Ile Fm Good (24%) mb) Claystone Sandstone
+2248 - Heidrun Tomma Fm
+
+6507/8-1 2323.5 Field (Ile Fm) Moderate Good Claystone Sandstone
+
+Figure 4 Screening C02 storage candidates based on lithology, average porosity, average permeability,
+
+and seal characteristics.
+Conclusion
+
+The study showcases how a “Double Funnel Approach” through an ML data ingestion pipeline can be an
+efficient screening tool to analyze, review and rank CCS potential using readily available unstructured data.
+In this case, 490,000 pages of documents have been analyzed in 21 days to identify potential CCS
+opportunities below Heidrun producing field, extended across the Froan basin. A dditional analysis through
+the “data target” may now be undertaken around Heidrun field on related wells, seismic and interpretation
+data.
+
+To conclude, such an analysis suggests the scalability and the cost effectiveness of the methodology for
+rapidly addressing the requirements of new CCS capabilities to mitigate the impact of the Climate Change.
+
+Acknowledgment
+
+This paper utilizes the data from the Norwegian Petroleum Directorate (NPD) open dataset. Disclaimer of
+those interpretations from the study are from investigation and analysis of the authors alone.
+
+References
+
+Baillard, F., & Hemandez, N. (2021). A Case Study of Understanding the Bonaparte Basin using
+Unstructured Data Analysis with Machine Learning Techniques. EAGE Annual.
+
+Hemandez, M., & Baillard, F. (2019). An effective G&G exploration strategy inspired by a wolfpack.
+FORCE Workshop.
+
+Norwegian Petroleum Directorate. (n.d.). 5 - The Norwegian Sea. Retrieved at January 20, 2023 from
+https://www.npd.no/en/facts/publications/co2-atlases/co2-atlas-for-the-norweqian-continental-shelf/5-the-
+norwegian-sea/
+
+Norwegian Petroleum Directorate. (n.d.). 4 - The Norwegian North Sea. Retrieved at January 20, 2023
+from https://www.npd.no/en/facts/publications/co2-atlases/co2-atlas-for-the-norwegian-continental-
+shelf/4-the-norwegian-north-sea/
+
+84" EAGE Annual Conference & Exhibition
+
