@@ -19,7 +19,7 @@ if ocr_text:
     if user_query:
         with st.spinner("Generating response..."):
             # Generate chatbot response
-            response = generate_response(user_query, ocr_text)
+            response = generate_response(ocr_text, user_query)
         st.markdown("**Chatbot Response:**")
         st.write(response)
 else:

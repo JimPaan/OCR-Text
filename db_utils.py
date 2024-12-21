@@ -31,9 +31,3 @@ def fetch_extracted_text():
     finally:
         if 'connection' in locals() and connection:
             connection.close()
-
-
-# Call the function
-extracted_text = fetch_extracted_text()
-if extracted_text:
-    print(f"Extracted Text: {extracted_text}")
