@@ -1,4 +1,5 @@
-streamlit
-pymysql
 transformers
-torch
+scikit-learn
+numpy
+pymysql
+streamlit
