@@ -3,12 +3,13 @@ import pymysql
 
 def fetch_extracted_text():
     try:
-        # Connect to MariaDB
+        # Connect to the live database
         connection = pymysql.connect(
-            host="localhost",
-            user="root",       # Replace with your MariaDB username
-            password="koala",  # Replace with your MariaDB password
-            database="ocr_db"  # Database name
+            host="sql12.freesqldatabase.com",
+            user="sql12753386",         # Replace with your database username
+            password="MKBtYICIP5",      # Replace with your database password
+            database="sql12753386",     # Replace with your database name
+            port=3306                   # Ensure the correct port is used
         )
         cursor = connection.cursor()
 
@@ -28,5 +29,11 @@ def fetch_extracted_text():
         return None
 
     finally:
-        if connection:
+        if 'connection' in locals() and connection:
             connection.close()
+
+
+# Call the function
+extracted_text = fetch_extracted_text()
+if extracted_text:
+    print(f"Extracted Text: {extracted_text}")
