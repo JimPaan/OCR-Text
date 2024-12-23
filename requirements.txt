@@ -2,7 +2,5 @@ transformers
 scikit-learn
 numpy
 pymysql
-streamlit
 nltk
-tensorflow
-torch
+streamlit
