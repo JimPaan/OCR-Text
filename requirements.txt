@@ -4,3 +4,4 @@ numpy
 pymysql
 nltk
 streamlit
+torch
