@@ -6,3 +6,4 @@
 .idea/text-ocr.iml
 __pycache__/chatbot_utils.cpython-310.pyc
 __pycache__/db_utils.cpython-310.pyc
+chat_log.csv
