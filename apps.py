@@ -13,7 +13,7 @@ from chatbot_utils import generate_response
 
 ssl._create_default_https_context = ssl._create_unverified_context
 nltk.data.path.append(os.path.abspath("nltk_data"))
-nltk.download('punkt')
+nltk.download('punkt', force=True)
 
 # Load intents from the JSON file
 file_path = os.path.abspath("./intents.json")
