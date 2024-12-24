@@ -114,7 +114,7 @@ def main():
 
     elif choice == "About":
         st.write(
-            "The goal of this project is to create a chatbot that can understand and respond to user input based on intents. The chatbot is built using Natural Language Processing (NLP) library and Logistic Regression, to extract the intents and entities from user input. The chatbot is built using Streamlit, a Python library for building interactive web applications.")
+            "The goal of this project is to create a chatbot that can understand and respond to user input based on predefined intents and context. By leveraging Natural Language Processing (NLP) techniques and Logistic Regression, the chatbot identifies intents and extracts relevant entities from user input to provide accurate and meaningful responses. The chatbot interface is implemented using Streamlit, a Python library for building interactive web applications.")
 
         st.subheader("Project Overview:")
 
@@ -128,9 +128,10 @@ def main():
 
         st.write("""
         The dataset used in this project is a collection of labelled intents and entities. The data is stored in a list.
-        - Intents: The intent of the user input (e.g. "greeting", "budget", "about")
-        - Entities: The entities extracted from user input (e.g. "Hi", "How do I create a budget?", "What is your purpose?")
+        - Intents: The intent of the user input (e.g. "context_query", "name", "about")
+        - Entities: The entities extracted from user input (e.g. "Hi", "What is the main idea of this context?", "What is your purpose?")
         - Text: The user input text.
+        - Context: The pre-defined pdf file.
         """)
 
         st.subheader("Streamlit Chatbot Interface:")
