@@ -6,9 +6,9 @@ def fetch_extracted_text():
         # Connect to the live database
         connection = pymysql.connect(
             host="sql12.freesqldatabase.com",
-            user="sql12754643",
-            password="161HszIBmd",
-            database="sql12754643",
+            user="sql12755858",
+            password="2f2T9Qzi8m",
+            database="sql12755858",
             port=3306
         )
         cursor = connection.cursor()
