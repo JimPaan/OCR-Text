@@ -3,15 +3,14 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 
 # Initialize the Hugging Face model pipeline
-qa_pipeline = pipeline("text-generation", model="gpt2")
+qa_pipeline = pipeline("question-answering", model="distilbert-base-uncased-distilled-squad")
 
 
-def generate_response(context, query, max_chunk_size=150, max_length=150):
+def generate_response(context, query, max_chunk_size=512):
     """
     This function takes a large context and a query, chunks the context for optimization,
     and returns the answer by querying a Hugging Face model.
 
-    :param max_length:
     :param context: The large text context
     :param query: The question/query
     :param max_chunk_size: Maximum chunk size for context (in tokens)
@@ -28,9 +27,6 @@ def generate_response(context, query, max_chunk_size=150, max_length=150):
     best_chunk_idx = np.argmax(similarities)
     best_chunk = context_chunks[best_chunk_idx]
 
-    input_text = f"Context: {best_chunk}\nQuestion: {query}\nAnswer:"
-    output = qa_pipeline(input_text, max_length=max_length, num_return_sequences=1)
-    response = output[0]['generated_text']
-    answer = response.split("Answer:")[1].strip() if "Answer:" in response else response
+    answer = qa_pipeline(question=query, context=best_chunk)
 
-    return answer
+    return answer['answer']
